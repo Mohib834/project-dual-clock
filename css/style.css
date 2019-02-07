@@ -1,0 +1,112 @@
+html{
+	font-size: 62.5%; /*1rem = 10px;*/
+}
+
+
+body{
+	font-size:16px;
+	font-family:orbitron;
+	background-image:linear-gradient(to right,#7474BF,#348AC7);
+	color:#fff;
+	position:relative;
+}
+
+
+/*Digital Clock Style*/
+
+.hide-digital-toggle{
+	opacity:0;
+	transform:translateX(60rem);
+}
+
+.digital-clock{
+	width:100rem;
+	margin:23rem auto;
+	text-align:center;
+	transition:all .5s;
+}
+
+.time{
+	font-size:8.5rem;
+	letter-spacing: 2.5rem;
+}
+
+
+
+/*Analog Clock Style*/
+
+.visible-analog-toggle{
+	opacity: 1 !important;
+	transform: translateX(15rem) !important;
+}
+
+.analog-clock{
+	width:100rem;
+	height: 90vh;
+	margin:2rem auto;
+	position:relative;
+	opacity:0;
+	transform:translateX(-60rem);
+	position:absolute;
+	top:-28rem;
+	transition:all .5s;
+}
+
+.clock{
+	width:30rem;
+	height:30rem;
+	border:8px solid #fff;
+	border-radius: 100rem;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.hand{
+	width:13.2rem;
+	border:2px solid #000;
+	position:absolute;
+	top:14.5rem;
+	left:1.5rem;
+	transform:rotate(90deg);
+	transform-origin: 100%;
+}
+
+.switch-btn{
+	background:#f7f7f7;
+	border:none;
+	border-radius: 10px;
+	color:rgba(0,0,0,.7);
+	font-weight: 600;
+	text-transform:uppercase;
+	letter-spacing: 1.5px;
+	padding:1.5rem 2.5rem;
+	font-size:1.5rem;
+	position:absolute;
+	left:44%;
+	top:25rem;
+	outline: none;
+	box-shadow: 0 .8rem 1.4rem rgba(0,0,0,.3);
+	transform: translateY(-2px);
+	transition:all .2s;
+}
+
+.switch-btn:active{
+	box-shadow: 0 .4rem .8rem rgba(0,0,0,.3);
+	transform: translateY(-1px);
+	
+}
+
+
+@media(max-width:1200px){
+	html{
+		font-size:50%;	/*1rem = 8px;*/
+	}
+}
+
+@media(max-width:900px){
+	html{
+		font-size:37.5%; /*1rem = 6px*/
+	}
+}
